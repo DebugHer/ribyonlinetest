@@ -134,6 +134,7 @@ public class MainActivity extends AppCompatActivity implements
                             locations.add(2,stopLongitude);
                             locations.add(3,stopLatitude);
 
+                            locationModel.setId(1);
                             locationModel.setStopLongitude(locations.get(2));
                             locationModel.setStopLatitude(locations.get(3));
                             locationModel.setStartLongitude(locations.get(0));

@@ -6,7 +6,7 @@ import androidx.room.PrimaryKey;
 @Entity(tableName = "Location")
 public class LocationModel {
     @PrimaryKey(autoGenerate = false)
-    private Long id;
+    private int id = 0;
     Double startLongitude;
     Double startLatitude;
     Double stopLongitude;
@@ -15,11 +15,12 @@ public class LocationModel {
     public LocationModel(){
 
     }
-    public Long getId() {
+
+    public int getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
